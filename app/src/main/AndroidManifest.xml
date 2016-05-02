@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ayon.rahman.shafiqur.btebdynamicmoduleforpostdatatoserver">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    ApplicationController
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bteblogo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        android:name="ayon.rahman.shafiqur.btebdynamicmoduleforpostdatatoserver.ApplicationController"
+        <activity android:name=".MainActivityForDash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                 />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".noticeview"
+            android:label="Notice View" />
+        <activity android:name=".noticeshow" />
+        <activity android:name=".categoryNotice" />
+        <activity android:name=".MainActivity" />
+
+
+
+        <activity
+            android:name=".pdf"
+            android:label="Notice"
+            android:parentActivityName=".pdfcatergory">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ayon.rahman.shafiqur.btebdynamicmoduleforpostdatatoserver.pdfcatergory" />
+        </activity>
+        <activity
+            android:name=".pdfother"
+            android:label="Others"
+            android:parentActivityName=".pdfcatergoryforothers">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ayon.rahman.shafiqur.btebdynamicmoduleforpostdatatoserver.pdfcatergory" />
+        </activity>
+        <activity
+            android:name=".pdfsyllabus"
+            android:label="Syllabus"
+            android:parentActivityName=".pdfcatergoryforsyllabus">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ayon.rahman.shafiqur.btebdynamicmoduleforpostdatatoserver.pdfcatergory" />
+        </activity>
+        <activity
+            android:name=".pdfresult"
+            android:label="Results"
+            android:parentActivityName=".pdfcatergoryforresult">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ayon.rahman.shafiqur.btebdynamicmoduleforpostdatatoserver.pdfcatergory" />
+        </activity>
+
+
+
+
+
+
+
+        <activity
+            android:name=".pdfcatergory"
+            android:label="Notice Category"
+            android:parentActivityName=".MainActivityForDash">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ayon.rahman.shafiqur.btebdynamicmoduleforpostdatatoserver.MainActivityForDash" />
+        </activity>
+        <activity
+            android:name=".pdfcatergoryforothers"
+            android:label="Others Category"
+            android:parentActivityName=".MainActivityForDash">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ayon.rahman.shafiqur.btebdynamicmoduleforpostdatatoserver.MainActivityForDash" />
+        </activity>
+        <activity
+            android:name=".pdfcatergoryforsyllabus"
+            android:label="Syllabus Category"
+            android:parentActivityName=".MainActivityForDash">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ayon.rahman.shafiqur.btebdynamicmoduleforpostdatatoserver.MainActivityForDash" />
+        </activity>
+        <activity
+            android:name=".pdfcatergoryforresult"
+            android:label="Result Category"
+            android:parentActivityName=".MainActivityForDash">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ayon.rahman.shafiqur.btebdynamicmoduleforpostdatatoserver.MainActivityForDash" />
+        </activity>
+
+
+
+
+
+        <activity
+            android:name=".pdftitle"
+            android:label="Notices"
+            android:parentActivityName=".pdfcatergory">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ayon.rahman.shafiqur.btebdynamicmoduleforpostdatatoserver.pdfcatergory" />
+            >
+        </activity>
+        <activity
+            android:name=".pdftitleforothers"
+            android:label="Others"
+            android:parentActivityName=".pdfcatergoryforothers">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ayon.rahman.shafiqur.btebdynamicmoduleforpostdatatoserver.pdfcatergory" />
+            >
+        </activity>
+        <activity
+            android:name=".pdftitleforresult"
+            android:label="Results"
+            android:parentActivityName=".pdfcatergoryforresult">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ayon.rahman.shafiqur.btebdynamicmoduleforpostdatatoserver.pdfcatergory" />
+            >
+        </activity>
+        <activity
+            android:name=".pdftitleforsyllabus"
+            android:label="Syllabus"
+            android:parentActivityName=".pdfcatergoryforsyllabus">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ayon.rahman.shafiqur.btebdynamicmoduleforpostdatatoserver.pdfcatergory" />
+            >
+        </activity>
+
+
+
+
+        <activity android:name=".splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
